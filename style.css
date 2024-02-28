@@ -1,0 +1,725 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 150vh;
+    width: 100vw;
+    background-image: url(school.png);
+}
+
+nav{
+    height: 6vh;
+    width: 100vw;
+    background: linear-gradient(to left, brown 30%, white);
+    font-size: 20px;
+    font-family: lucida sans;
+    text-align: center;
+    padding-top: 7px;
+    padding-left: 40%;
+    
+}
+
+.sch{
+    height: 5%;
+    width: 20%;
+    background-color:white;
+    color:  black;
+    border-radius: 10px;
+    border: 2px solid red;
+    border-bottom: 2px solid blue;
+    font-size: 30px;
+    font-family: segoe ui;
+    font-weight: 600;
+    margin-top: 6px;
+    margin-left: 10px;
+    padding-left: 12px;
+    padding-top: 0px;
+}
+
+.grade{
+    font-size: 30px;
+    font-family: trebuchet ms;
+    text-align: center;
+    color: black;
+    padding-top: 0px;
+    /* background-color: red; */
+    
+}
+
+
+
+#student{
+    height: 4%;
+    width: 16%;
+    font-size: 17px;
+    font-family: trebuchet ms;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+
+}
+
+#student::placeholder{
+    font-size: 15px;
+    padding-left: 10px;
+    color: brown;
+    font-weight: 500;
+    font-family: cursive;
+}
+
+#student:focus{
+    outline-color: bisque;
+    
+}
+
+#cla{
+    height: 4%;
+    width: 16%;
+    font-size: 17px;
+    font-family: trebuchet ms;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: relative;
+    right: 16.2%;
+    top: 40px;
+}
+
+#cla::placeholder{
+    font-size: 15px;
+    padding-left: 10px;
+    color: brown;
+    font-weight: 500;
+    font-family: cursive;
+}
+
+#cla:focus{
+    outline-color: bisque;
+    
+}
+
+
+#bod{
+    height: 60%;
+    width: 50%;
+    background-color: rgb(187, 186, 184);
+    background-image: url(waterbg-removebg-preview.png);
+    position: absolute;
+    left: 25%;
+    top: 35%;
+   display: flex;
+   flex-direction: column;
+  
+}
+
+
+.dt1
+{
+    height: 16.5%;
+    width:100%;
+    border: 1px solid black;
+    background: linear-gradient(to bottom right, white -20px, brown -60px, whitesmoke 60px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.date{
+    height:auto;
+    width: auto;
+    border: 1px solid black;
+    font-size: 25px;
+    font-family: calibri;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+
+
+}
+
+.subject{
+    height:auto;
+    width: auto;
+    border: 1px solid black;
+    font-size: 25px;
+    font-family: calibri;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.score{
+    height:auto;
+    width: auto;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 25px;
+    font-family: calibri;
+    font-weight: bold;
+    padding-top: 20px;
+
+}
+
+
+.dt2
+{
+    height: 21%;
+    width: 100%;
+    border: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#date1{
+    height: auto;
+    width: auto;
+    padding-left: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: rgb(187, 186, 184);
+    background-image: url(waterbg-removebg-preview.png);
+}
+
+#date1:focus{
+    outline: none;
+}
+#sco{
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#text2{
+    height: auto;
+    width: auto;
+    
+    background-color: rgb(187, 186, 184);
+    background-image: url(waterbg-removebg-preview.png);
+    border: 1px solid black;
+    font-size: 20px;
+    padding-top: 40px;
+    font-family: calibri;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#text2:focus{
+    outline: none;
+}
+
+
+.dt3{
+        height: 21%;
+        width: 100%;
+        border: none;
+       
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+}
+
+#date2{
+    height: auto;
+    width: auto;
+    padding-left: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    
+    background-color: rgb(187, 186, 184);
+    background-image: url(waterbg-removebg-preview.png);
+}
+
+#date2:focus{
+    outline: none;
+}
+#sco1{
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#text3{
+    height: auto;
+    width: auto;
+    
+    background-color: rgb(187, 186, 184);
+    background-image: url(waterbg-removebg-preview.png);
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: calibri;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#text2:focus{
+    outline: none;
+}
+
+.dt4{
+    height: 21%;
+    width: 100%;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#date3{
+    height: auto;
+    width: auto;
+    padding-left: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    
+    background-color: rgb(187, 186, 184);
+    background-image: url(waterbg-removebg-preview.png);
+}
+
+#date3:focus{
+    outline: none;
+}
+#sco2{
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#text4{
+    height: auto;
+    width: auto;
+    background-color: rgb(187, 186, 184);
+    background-image: url(waterbg-removebg-preview.png);
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: calibri;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#text4:focus{
+    outline: none;
+}
+
+.dt5{
+    height: 21%;
+    width: 100%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+#date4{
+    height: auto;
+    width: auto;
+    padding-left: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+  
+    background-color: rgb(187, 186, 184);
+    background-image: url(waterbg-removebg-preview.png);
+
+}
+
+#date4:focus{
+    outline: none;
+}
+#sco3{
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#text5{
+    height: auto;
+    width: auto;
+    background-color: rgb(187, 186, 184);
+    background-image: url(waterbg-removebg-preview.png);
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: calibri;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#text5:focus{
+    outline: none;
+}
+
+#button{
+    height: 7%;
+    width: 8%;
+    border-radius: 10px;
+    position: absolute;
+    top: 97%;
+    font-size: 20px;
+    font-family: calibri;
+    font-weight: bold;
+    border: none;
+    left: 46%;
+    box-shadow: 10px 8px 70px blueviolet;
+    
+}
+
+#footer{
+    height: 30%;
+    width: 40%;
+    font-size: 20px;
+    border-radius: 10px ;
+    font-family: cursive;
+    color: black;
+    background-color: white;
+    position: absolute;
+    left: 30%;
+    top: 108%;
+    box-shadow: 9px 10px 55px brown;
+    
+
+}
+
+
+
+@media(max-width: 490px){
+    nav{
+        height: 6vh;
+        width: 100vw;
+        background: linear-gradient(to left, brown 30%, white);
+        font-size: 20px;
+        font-family: lucida sans;
+        text-align: center;
+        padding-top: 7px;
+    }
+    
+    main{
+        height: 30vh;
+        width: 100vw;
+        background-color: white;
+        display: grid;
+    }
+    .sch{
+        height: 5%;
+        width: 70%;
+        color: wheat;
+        position: absolute;
+        top: 7%;
+        left: 14%;
+        background-color: white;
+        border-radius: 10px;
+        border-bottom: 2px solid blue;
+        font-size: 28px;
+        font-family: segoe ui;
+        font-weight: 600;
+        padding-left: 12px;
+        padding-bottom: 36px;
+        display: none;
+    }
+    
+.grade{
+    font-size: 20px;
+    font-family: trebuchet ms;
+    text-align: center;
+    color: brown;
+    padding-bottom: 290%;
+  
+    
+}
+#student{
+    height: 4%;
+    width: 50%;
+    font-size: 17px;
+    font-family: trebuchet ms;
+    position: absolute;
+    top: 7%;
+    left: 20%;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+#cla{
+    height: 4%;
+    width: 50%;
+    font-size: 17px;
+    font-family: trebuchet ms;
+    position: absolute;
+    top: 16%;
+    left: 26%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#bod{
+    height: 50%;
+    width: 95%;
+    background-color: yellow;
+    position: absolute;
+    left: 2%;
+    top: 22%;
+   display: grid;
+   grid-template-columns: auto, auto, auto ;
+}
+
+
+.dt1
+{
+    height: 10%;
+    width:100%;
+    border: 1px solid black;
+    background: linear-gradient(to bottom right, white -20px, brown -60px, whitesmoke 60px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.date{
+    height:auto;
+    width:auto;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: calibri;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 4px;
+    
+
+
+}
+
+.subject{
+    height:auto;
+    width: auto;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: calibri;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 4px;
+
+
+}
+
+.score{
+    height:auto;
+    width: auto;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 20px;
+    font-family: calibri;
+    font-weight: bold;
+    padding-top: 4px;
+
+}
+
+
+.dt2
+{
+    height: 30%;
+    width: auto;
+    border: none;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#date1{
+    height: auto;
+    width: auto;
+    padding-left: none;
+    font-size: 17px;
+    text-transform: capitalize;
+    background-color: rgb(187, 186, 184);
+   
+}
+
+#date1:focus{
+    outline: none;
+}
+#sco{
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    font-size: 35px;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#text2{
+    height: auto;
+    width: auto;
+    background-color: rgb(blue);
+    background-image: url(waterbg-removebg-preview.png);
+    border: 1px solid black;
+    font-size: 20px;
+    padding-top: 4px;
+    font-family: calibri;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#text2:focus{
+    outline: none;
+}
+
+
+.dt3{
+        height: auto;
+        width: 100%;
+        border: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+}
+
+#date2{
+    height: auto;
+    width: auto;
+    padding-left: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: rgb(187, 186, 184);
+    background-image: url(waterbg-removebg-preview.png);
+}
+
+#date2:focus{
+    outline: none;
+ 
+}
+
+
+.dt4{
+    height: auto;
+    width: 100%;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#date3{
+    height: auto;
+    width: auto;
+    padding-left: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+   
+    background-color: rgb(187, 186, 184);
+    background-image: url(waterbg-removebg-preview.png);
+}
+
+#date3:focus{
+    outline: none;
+}
+#sco2{
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#text4{
+    height: auto;
+    width: auto;
+
+    background-color: rgb(187, 186, 184);
+    background-image: url(waterbg-removebg-preview.png);
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: calibri;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#text4:focus{
+    outline: none;
+}
+
+.dt5{
+    height: auto;
+    width: 100%;
+    border: 1px solid black;
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+#date4{
+    height: auto;
+    width: auto;
+    padding-left: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+   
+    background-color: rgb(187, 186, 184);
+    background-image: url(waterbg-removebg-preview.png);
+   
+}
+
+#date4:focus{
+    outline: none;
+}
+#sco3{
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#text5{
+    height: auto;
+    width: auto;
+    
+    background-color: rgb(187, 186, 184);
+    background-image: url(waterbg-removebg-preview.png);
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: calibri;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#text5:focus{
+    outline: none;
+}
+
+}
