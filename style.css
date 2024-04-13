@@ -1,13 +1,14 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 main{
-    height: 150vh;
-    width: 100vw;
+    height: 820px;
+    width: 100%;
     background-image: url(school.png);
+    
 }
 
 nav{
@@ -52,12 +53,13 @@ nav{
 
 
 #student{
-    height: 4%;
-    width: 16%;
+    height: 40px;
+    width: 220px;
     font-size: 17px;
     font-family: trebuchet ms;
-    padding: 10px;
-    margin-left: 20px;
+    padding: 20px;
+    position: absolute;
+    left: 2%;
     border-radius: 10px;
     border: 1px solid black;
 
@@ -78,16 +80,16 @@ nav{
 }
 
 #cla{
-    height: 4%;
-    width: 16%;
+    height: 40px;
+    width: 220px;
     font-size: 17px;
     font-family: trebuchet ms;
-    padding: 10px;
+    padding: 20px;
+    position: absolute;
+    left: 2%;
     border-radius: 10px;
     border: 1px solid black;
-    position: relative;
-    right: 16.2%;
-    top: 40px;
+    top: 30%;
 }
 
 #cla::placeholder{
@@ -118,7 +120,7 @@ nav{
 }
 
 
-.dt1
+.header
 {
     height: 16.5%;
     width:100%;
@@ -167,7 +169,7 @@ nav{
 }
 
 
-.dt2
+.header1
 {
     height: 21%;
     width: 100%;
@@ -221,7 +223,7 @@ nav{
 }
 
 
-.dt3{
+.header2{
         height: 21%;
         width: 100%;
         border: none;
@@ -273,7 +275,7 @@ nav{
     outline: none;
 }
 
-.dt4{
+.header3{
     height: 21%;
     width: 100%;
     border: 1px solid black;
@@ -324,7 +326,7 @@ nav{
     outline: none;
 }
 
-.dt5{
+.header4{
     height: 21%;
     width: 100%;
     border: 1px solid black;
@@ -405,182 +407,209 @@ nav{
     box-shadow: 9px 10px 55px brown;
     
 
-}
-
-
-
-@media(max-width: 490px){
-    nav{
-        height: 6vh;
+}@media(max-width:480px)
+ {
+    main{
+        height: 100vh;
         width: 100vw;
+        background-image: url(school.png);
+    }
+    
+    nav{
+        height: 5vh;
+        width: 200vw;
         background: linear-gradient(to left, brown 30%, white);
-        font-size: 20px;
+        font-size: 17px;
         font-family: lucida sans;
         text-align: center;
-        padding-top: 7px;
+        padding-top: 10px;
+        padding-left: 15%;
+        
     }
     
-    main{
-        height: 30vh;
-        width: 100vw;
-        background-color: white;
-        display: grid;
-    }
-    .sch{
-        height: 5%;
-        width: 70%;
-        color: wheat;
-        position: absolute;
-        top: 7%;
-        left: 14%;
-        background-color: white;
-        border-radius: 10px;
-        border-bottom: 2px solid blue;
-        font-size: 28px;
-        font-family: segoe ui;
-        font-weight: 600;
-        padding-left: 12px;
-        padding-bottom: 36px;
-        display: none;
-    }
-    
-.grade{
+.sch{
+    height: 40px;
+    width: 220px;
+    background-color:white;
+    color:  black;
+    border-radius: 10px;
+    border: 2px solid red;
+    border-bottom: 2px solid blue;
     font-size: 20px;
-    font-family: trebuchet ms;
-    text-align: center;
-    color: brown;
-    padding-bottom: 290%;
-  
-    
+    font-family: segoe ui;
+    font-weight: 600;
+    margin-top: 6px;
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-top: 0px;
 }
+
+.grade{
+    height: 20px;
+    width: 180px;
+    font-size: 20px;
+    font-family: calibri;
+    text-align: none;
+    position: absolute;
+    left: 24%;
+    color: rgb(185, 80, 5);
+    background-color: white;
+}
+
+
+
 #student{
-    height: 4%;
-    width: 50%;
+    height: 40px;
+    width: 250px;
     font-size: 17px;
     font-family: trebuchet ms;
+    padding: 10px;
     position: absolute;
-    top: 7%;
-    left: 20%;
-    border-radius: 10px;
-    border: 1px solid black;
-    margin-top: 30px;
-}
-#cla{
-    height: 4%;
-    width: 50%;
-    font-size: 17px;
-    font-family: trebuchet ms;
-    position: absolute;
-    top: 16%;
-    left: 26%;
+    left: 5%;
+    top: 15%;
     border-radius: 10px;
     border: 1px solid black;
 }
+    
+    #student::placeholder{
+        font-size: 15px;
+        padding-left: 10px;
+        color: brown;
+        font-weight: 600;
+        font-family: cursive;
+    }
+    
+    #student:focus{
+        outline-color: bisque;
+        
+    }
+    
+    #cla{
+        height: 40px;
+        width: 250px;
+        font-size: 17px;
+        font-family: trebuchet ms;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid black;
+        position: absolute;
+        left:6%;
+        top: 22%;
+    }
+    
+    #cla::placeholder{
+        font-size: 15px;
+        padding-left: 10px;
+        color: brown;
+        font-weight: 500;
+        font-family: cursive;
+    }
+    
+    #cla:focus{
+        outline-color: bisque;
+        
+    }
+    
 #bod{
-    height: 50%;
-    width: 95%;
-    background-color: yellow;
+    height: 21%;
+    width: 290px;
+    background-color: none;
+    background-image: none;
     position: absolute;
-    left: 2%;
-    top: 22%;
-   display: grid;
-   grid-template-columns: auto, auto, auto ;
+    left: 10%;
+    top: 30%;
+   display: flex;
+   flex-direction: column;
 }
-
-
-.dt1
+.header
 {
-    height: 10%;
-    width:100%;
+    height: 40px;
+    width:290px;
     border: 1px solid black;
     background: linear-gradient(to bottom right, white -20px, brown -60px, whitesmoke 60px);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-
-
 .date{
-    height:auto;
-    width:auto;
-    border: 1px solid black;
-    font-size: 20px;
-    font-family: calibri;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 4px;
-    
-
-
-}
-
-.subject{
-    height:auto;
+    height:40px;
     width: auto;
     border: 1px solid black;
-    font-size: 20px;
+    font-size: 15px;
     font-family: calibri;
     font-weight: bold;
     text-align: center;
-    padding-top: 4px;
-
+    padding-top: 10px;
+}
+.subject{
+    height:40px;
+    width: auto;
+    border: 1px solid black;
+    font-size: 15px;
+    font-family: calibri;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
 
 }
 
 .score{
-    height:auto;
+    height:40px;
     width: auto;
     border: 1px solid black;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     font-family: calibri;
     font-weight: bold;
-    padding-top: 4px;
+    padding-top: 10px;
 
 }
 
-
-.dt2
+.header1
 {
-    height: 30%;
-    width: auto;
+    height: 40px;
+    width: 290px;
     border: none;
-    background-color: blue;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 #date1{
-    height: auto;
-    width: auto;
-    padding-left: none;
-    font-size: 17px;
+    height: 40px;
+    width: 97px;
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: arial;
+    padding-left:   0px;
     text-transform: capitalize;
     background-color: rgb(187, 186, 184);
-   
+    background-image: url(waterbg-removebg-preview.png);
+    border: 1px solid black;
 }
 
 #date1:focus{
     outline: none;
 }
 #sco{
-    height: auto;
-    width: auto;
+    height: 40px;
+    width: 96px;
     border: 1px solid black;
-    font-size: 35px;
+    font-size: 15px;
     font-family: arial;
     font-weight: bold;
     text-align: center;
     padding-top: 10px;
+    background-image: url(waterbg-removebg-preview.png);
 }
 
 #text2{
-    height: auto;
-    width: auto;
-    background-color: rgb(blue);
+    height: 40px;
+    width: 97px;
+    background-color: rgb(187, 186, 184);
     background-image: url(waterbg-removebg-preview.png);
     border: 1px solid black;
-    font-size: 20px;
-    padding-top: 4px;
+    font-size: 18px;
+    padding-top: 8px;
     font-family: calibri;
     font-weight: bold;
     box-sizing: border-box;
@@ -590,74 +619,108 @@ nav{
 #text2:focus{
     outline: none;
 }
-
-
-.dt3{
-        height: auto;
-        width: 100%;
-        border: none;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+.header2
+{
+    height: 40px;
+    width: 290px;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 #date2{
-    height: auto;
-    width: auto;
+    height: 40px;
+    width: 97px;
     padding-left: 10px;
-    font-size: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: arial;
+    padding-left:   0px;
     text-transform: capitalize;
     background-color: rgb(187, 186, 184);
     background-image: url(waterbg-removebg-preview.png);
+    border: 1px solid black;
 }
 
 #date2:focus{
     outline: none;
- 
+}
+#sco1{
+    height: 40px;
+    width: 96px;
+    border: 1px solid black;
+    font-size: 15px;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    background-image: url(waterbg-removebg-preview.png);
 }
 
-
-.dt4{
-    height: auto;
-    width: 100%;
+#text3{
+    height: 40px;
+    width: 97px;
+    background-color: rgb(187, 186, 184);
+    background-image: url(waterbg-removebg-preview.png);
     border: 1px solid black;
+    font-size: 18px;
+    padding-top: 8px;
+    font-family: calibri;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+}
 
+#text3:focus{
+    outline: none;
+}
+.header3
+{
+    height: 40px;
+    width: 290px;
+    border: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 #date3{
-    height: auto;
-    width: auto;
+    height: 40px;
+    width: 97px;
     padding-left: 10px;
-    font-size: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: arial;
+    padding-left:   0px;
     text-transform: capitalize;
-   
     background-color: rgb(187, 186, 184);
     background-image: url(waterbg-removebg-preview.png);
+    border: 1px solid black;
 }
 
 #date3:focus{
     outline: none;
 }
 #sco2{
-    height: auto;
-    width: auto;
+    height: 40px;
+    width: 96px;
     border: 1px solid black;
-    font-size: 20px;
+    font-size: 15px;
     font-family: arial;
     font-weight: bold;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 10px;
+    background-image: url(waterbg-removebg-preview.png);
+    background-color: rgb(187, 186, 184);
 }
 
 #text4{
-    height: auto;
-    width: auto;
-
+    height: 40px;
+    width: 97px;
     background-color: rgb(187, 186, 184);
     background-image: url(waterbg-removebg-preview.png);
     border: 1px solid black;
-    font-size: 20px;
+    font-size: 18px;
+    padding-top: 8px;
     font-family: calibri;
     font-weight: bold;
     box-sizing: border-box;
@@ -667,51 +730,52 @@ nav{
 #text4:focus{
     outline: none;
 }
-
-.dt5{
-    height: auto;
-    width: 100%;
-    border: 1px solid black;
-   
+.header4
+{
+    height: 40px;
+    width: 290px;
+    border: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-
 #date4{
-    height: auto;
-    width: auto;
+    height: 40px;
+    width: 97px;
     padding-left: 10px;
-    font-size: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: arial;
+    padding-left:   0px;
     text-transform: capitalize;
-   
     background-color: rgb(187, 186, 184);
     background-image: url(waterbg-removebg-preview.png);
-   
+    border: 1px solid black;
 }
 
-#date4:focus{
+#date3:focus{
     outline: none;
 }
 #sco3{
-    height: auto;
-    width: auto;
+    height: 40px;
+    width: 96px;
     border: 1px solid black;
-    font-size: 20px;
+    font-size: 15px;
     font-family: arial;
     font-weight: bold;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 10px;
+    background-color: rgb(187, 186, 184);
 }
 
 #text5{
-    height: auto;
-    width: auto;
-    
+    height: 40px;
+    width: 97px;
     background-color: rgb(187, 186, 184);
     background-image: url(waterbg-removebg-preview.png);
     border: 1px solid black;
-    font-size: 20px;
+    font-size: 18px;
+    padding-top: 8px;
     font-family: calibri;
     font-weight: bold;
     box-sizing: border-box;
@@ -721,5 +785,458 @@ nav{
 #text5:focus{
     outline: none;
 }
+#button{
+    height: 30px;
+    width: 90px;
+    background-color: hotpink;
+    border-radius: 10px;
+    position: absolute;
+    top: 63%;
+    font-size: 20px;
+    font-family: calibri;
+    font-weight: bold;
+    border: none;
+    left: 37%;
+    box-shadow: 10px 8px 70px blueviolet;
+    
+}
+
+#footer{
+    height: 80px;
+    width: 250px;
+    font-size: 15px;
+    border-radius: 10px ;
+    font-family: cursive;
+    color: black;
+    background-color: white;
+    position: absolute;
+    left: 15%;
+    top: 70%;
+    box-shadow: 9px 10px 55px brown;
+    line-height: 17px;
+}
+    }
+        
+    @media(min-width: 48em)
+        and (max-width:64em)
+        and (orientation:portrait)
+    {
+        main{
+     height: 100vh;
+     width: 100vw;
+     background-image: url(school.png);
+ }
+ 
+ nav{
+     height: 5vh;
+     width: 200vw;
+     background: linear-gradient(to bottom, brown 70%, white 50% );
+     font-size: 25px;
+     font-family: lucida sans;
+     text-align: center;
+     padding-top: 10px;
+     padding-left: 22%;
+     color: black;
+     font-weight: bold;
+     
+ }
+ 
+.sch{
+ height: 40px;
+ width: 220px;
+ background-color:white;
+ color:  black;
+ border-radius: 10px;
+ border: 2px solid red;
+ border-bottom: 2px solid blue;
+ font-size: 20px;
+ font-family: segoe ui;
+ font-weight: 600;
+ margin-top: 6px;
+ margin-left: 6%;
+ padding-left: 20px;
+ padding-top: 0px;
+}
+
+.grade{
+ height: 40px;
+ width: 290px;
+ font-size: 30px;
+ font-family: calibri;
+ text-align: center;
+ position: absolute;
+ left: 32%;
+ padding-top: -11px;
+ color: black;
+ background-color: wheat;
+}
+
+
+
+#student{
+ height: 40px;
+ width: 250px;
+ font-size: 17px;
+ font-family: trebuchet ms;
+ padding: 10px;
+ position: absolute;
+ left: 5%;
+ top: 15%;
+ border-radius: 10px;
+ border: 1px solid black;
+}
+ 
+ #student::placeholder{
+     font-size: 15px;
+     padding-left: 10px;
+     color: brown;
+     font-weight: 600;
+     font-family: cursive;
+ }
+ 
+ #student:focus{
+     outline-color: bisque;
+     
+ }
+ 
+ #cla{
+     height: 40px;
+     width: 250px;
+     font-size: 17px;
+     font-family: trebuchet ms;
+     padding: 10px;
+     border-radius: 10px;
+     border: 1px solid black;
+     position: absolute;
+     left:5%;
+     top: 22%;
+ }
+ 
+ #cla::placeholder{
+     font-size: 15px;
+     padding-left: 10px;
+     color: brown;
+     font-weight: 600;
+     font-family: cursive;
+ }
+ 
+ #cla:focus{
+     outline-color: bisque;
+     
+ }
+ 
+#bod{
+ height: 340px;
+ width: 525px;
+ position: absolute;
+ left: 20%;
+ top: 30%;
+display: flex;
+flex-direction: column;
+}
+
+.header
+{
+ height: 60px;
+ width:525px;
+ border: 1px solid black;
+ background: linear-gradient(to bottom right, white -20px, brown -60px, whitesmoke 60px);
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+}
+.date{
+ height:60px;
+ width: auto;
+ border: 1px solid black;
+ font-size: 25px;
+ font-family: calibri;
+ font-weight: bold;
+ text-align: center;
+ padding-top: 10px;
+}
+.subject{
+ height:60px;
+ width: auto;
+ border: 1px solid black;
+ font-size: 25px;
+ font-family: calibri;
+ font-weight: bold;
+ text-align: center;
+ padding-top: 10px;
 
 }
+
+.score{
+ height:60px;
+ width: auto;
+ border: 1px solid black;
+ text-align: center;
+ font-size: 25px;
+ font-family: calibri;
+ font-weight: bold;
+ padding-top: 10px;
+
+}
+
+.header1
+{
+ height: 70px;
+ width: 525px;
+ border: none;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ background-color: rgb(187, 186, 184);
+ background-image: url(waterbg-removebg-preview.png);
+}
+
+#date1{
+ height: 70px;
+ width: auto;
+ padding-left: 10px;
+ font-size: 23px;
+ font-weight: bold;
+ font-family: arial;
+ padding-left:   0px;
+ text-transform: capitalize;
+ background-color: rgb(187, 186, 184);
+ background-image: url(waterbg-removebg-preview.png);
+ border: 1px solid black;
+}
+
+#date1:focus{
+ outline: none;
+}
+#sco{
+ height: 70px;
+ width: 175px;
+ border: 1px solid black;
+ font-size: 25px;
+ font-family: arial;
+ font-weight: bold;
+ text-align: center;
+ padding-top: 10px;
+ background-image: url(waterbg-removebg-preview.png);
+}
+
+#text2{
+ height: 70px;
+ width: 175px;
+ background-color: rgb(187, 186, 184);
+ background-image: url(waterbg-removebg-preview.png);
+ border: 1px solid black;
+ font-size: 30px;
+ padding-top: 2px;
+ font-family: calibri;
+ font-weight: bold;
+ box-sizing: border-box;
+ text-align: center;
+}
+
+#text2:focus{
+ outline: none;
+}
+.header2
+{
+ height: 70px;
+ width: 525px;
+ border: none;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ background-color: rgb(187, 186, 184);
+ background-image: url(waterbg-removebg-preview.png);
+}
+
+#date2{
+ height: 70px;
+ width: auto;
+ padding-left: 10px;
+ font-size: 23px;
+ font-weight: bold;
+ font-family: arial;
+ padding-left:   0px;
+ text-transform: capitalize;
+ background-color: rgb(187, 186, 184);
+ background-image: url(waterbg-removebg-preview.png);
+ border: 1px solid black;
+}
+
+#date2:focus{
+ outline: none;
+}
+#sco1{
+ height: 70px;
+ width: 175px;
+ border: 1px solid black;
+ font-size: 25px;
+ font-family: arial;
+ font-weight: bold;
+ text-align: center;
+ padding-top: 18px;
+ background-image: url(waterbg-removebg-preview.png);
+}
+
+#text3{
+ height: 70px;
+ width: 175px;
+ background-color: rgb(187, 186, 184);
+ background-image: url(waterbg-removebg-preview.png);
+ border: 1px solid black;
+ font-size: 30px;
+ padding-top: 2px;
+ font-family: calibri;
+ font-weight: bold;
+ box-sizing: border-box;
+ text-align: center;
+}
+
+#text3:focus{
+ outline: none;
+}
+.header3
+{
+    height: 70px;
+    width: 525px;
+ background-color: rgb(187, 186, 184);
+ background-image: url(waterbg-removebg-preview.png);
+ border: none;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+}
+
+#date3{
+ height: 70px;
+ width:auto;
+ padding-left: 10px;
+ font-size: 23px;
+ font-weight: bold;
+ font-family: arial;
+ padding-left:   0px;
+ text-transform: capitalize;
+ background-color: rgb(187, 186, 184);
+ background-image: url(waterbg-removebg-preview.png);
+ border: 1px solid black;
+}
+
+#date3:focus{
+ outline: none;
+}
+#sco2{
+ height: 70px;
+ width: 175px;
+ border: 1px solid black;
+ font-size: 25px;
+ font-family: arial;
+ font-weight: bold;
+ text-align: center;
+ padding-top: 10px;
+ background-image: url(waterbg-removebg-preview.png);
+ background-color: rgb(187, 186, 184);
+}
+
+#text4{
+ height: 70px;
+ width: 175px;
+ background-color: rgb(187, 186, 184);
+ background-image: url(waterbg-removebg-preview.png);
+ border: 1px solid black;
+ font-size: 30px;
+ padding-top: 2px;
+ font-family: calibri;
+ font-weight: bold;
+ box-sizing: border-box;
+ text-align: center;
+}
+
+#text4:focus{
+ outline: none;
+}
+.header4
+{
+height: 70px;
+ width: 525px;
+ border: none;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ background-color: rgb(187, 186, 184);
+ background-image: url(waterbg-removebg-preview.png);
+}
+
+#date4{
+ height: 70px;
+ width: auto;
+ padding-left: 10px;
+ font-size: 23px;
+ font-weight: bold;
+ font-family: arial;
+ padding-left:   0px;
+ text-transform: capitalize;
+ background-color: rgb(187, 186, 184);
+ background-image: url(waterbg-removebg-preview.png);
+ border: 1px solid black;
+}
+
+#date3:focus{
+ outline: none;
+}
+#sco3{
+ height: 70px;
+ width: 175px;
+ border: 1px solid black;
+ font-size: 25px;
+ font-family: arial;
+ font-weight: bold;
+ text-align: center;
+ padding-top: 14px;
+ background-color: rgb(187, 186, 184);
+}
+
+#text5{
+ height: 70px;
+ width: 175px;
+ background-color: rgb(187, 186, 184);
+ background-image: url(waterbg-removebg-preview.png);
+ border: 1px solid black;
+ font-size: 30px;
+ padding-top: 8px;
+ font-family: calibri;
+ font-weight: bold;
+ box-sizing: border-box;
+ text-align: center;
+}
+
+#text5:focus{
+ outline: none;
+}
+#button{
+ height: 40px;
+ width: 100px;
+ background-color: hotpink;
+ border-radius: 10px;
+ position: absolute;
+ top: 63%;
+ font-size: 25px;
+ font-family: calibri;
+ font-weight: bold;
+ border: none;
+ left: 43%;
+ box-shadow: 10px 8px 70px blueviolet;
+ 
+}
+
+#footer{
+ height: 120px;
+ width: 390px;
+ font-size: 22px;
+ border-radius: 10px ;
+ font-weight: 600;
+ font-family: cursive;
+ color: black;
+ background-color: white;
+ position: absolute;
+ left: 26%;
+ top: 70%;
+ box-shadow: 9px 10px 55px brown;
+ line-height: 35px;
+}
+    }
+    

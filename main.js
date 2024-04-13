@@ -8,6 +8,7 @@ function result(){
     var cla = (document.getElementById("cla").value);
     var foot = document.getElementById("footer")
     
+    
     var total = score1+score2+score3+score4; 
    var precentage = total/4;
 
