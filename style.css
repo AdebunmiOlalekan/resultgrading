@@ -809,7 +809,7 @@ and
         and (orientation:portrait)
     {
         main{
-     height: 100vh;
+     height: 200vh;
      width: 100vw;
      background-image: url(school.png);
  }
